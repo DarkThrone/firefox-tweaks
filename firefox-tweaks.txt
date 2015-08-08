@@ -81,7 +81,7 @@ toolkit.telemetry.server - (blank)
 Install unsigned addons in Aurora/Dev-Edition/etc:
 xpinstall.signatures.required - false
 
-Type 'google' in about:config and delete most of the links (the ones that wont break anything, thats up to you).
+Type 'google' in about:config and delete most of the links (the ones that won't break anything, that's up to you).
 Also search through these to delete links from:
 browser.contentHandlers
 browser.safebrowsing
