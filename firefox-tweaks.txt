@@ -95,7 +95,7 @@ APPEARANCE
 Show full URLs:
 browser.urlbar.trimURLs - false
 
-Revert to non-idiotic search bar layout:
+Revert to old search bar layout:
 browser.search.showOneOffButtons - false
 
 De-crap new tab page:
