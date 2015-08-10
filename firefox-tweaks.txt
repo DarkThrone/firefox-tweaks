@@ -1,5 +1,6 @@
 http://kb.mozillazine.org/About:config_entries (Outdated)
 http://thesimplecomputer.info/tscs-firefox-tweak-guide
+https://www.privacytools.io/#about_config
 
 ----------------------------------------------------
 
@@ -38,9 +39,13 @@ browser.cache.use_new_backend - 1
 
 SECURITY/PRIVACY
 
-Disable WebRTC:
+Disable WebRTC (extremely important for VPN users - WebRTC *will* leak your real IP address):
 media.peerconnection.enabled - false
 media.peerconnection.use_document_iceservers - false
+
+Disable DNS proxy bypass:
+http://kb.mozillazine.org/Network.proxy.socks_remote_dns
+network.proxy.socks_remote_dns - true
 
 Disable IPv6:
 http://kb.mozillazine.org/Network.dns.disableIPv6
@@ -61,10 +66,6 @@ privacy.donottrackheader.enabled - true
 privacy.donottrackheader.value - 1
 privacy.trackingprotection.enabled - true
 
-Disable DNS proxy bypass:
-http://kb.mozillazine.org/Network.proxy.socks_remote_dns
-network.proxy.socks_remote_dns - true
-
 Disable geolocation:
 geo.enabled - false
 geo.wifi.uri - (blank)
@@ -78,8 +79,11 @@ Disable telemetry:
 toolkit.telemetry.enabled - false
 toolkit.telemetry.server - (blank)
 
-Install unsigned addons in Aurora/Dev-Edition/etc:
-xpinstall.signatures.required - false
+Disable 'safe browsing' aka. Google tracking/logging:
+browser.safebrowsing.downloads.enabled - false
+browser.safebrowsing.downloads.remote.enabled - false
+browser.safebrowsing.enabled - false
+browser.safebrowsing.maleware.enabled - false
 
 Type 'google' in about:config and delete most of the links (the ones that won't break anything, that's up to you).
 Also search through these to delete links from:
@@ -87,6 +91,13 @@ browser.contentHandlers
 browser.safebrowsing
 browser.search
 gecko.handlerService
+
+Disable WebGL:
+https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
+webgl.disabled - true
+
+Install unsigned addons in Aurora/Dev-Edition/etc (needed for Privacy Badger, HTTPS Everywhere, etc.):
+xpinstall.signatures.required - false
 
 ----------------------------------------------------
 
