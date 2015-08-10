@@ -1,3 +1,5 @@
+Further reading:
+
 http://kb.mozillazine.org/About:config_entries (Outdated)
 http://thesimplecomputer.info/tscs-firefox-tweak-guide
 https://www.privacytools.io/#about_config
