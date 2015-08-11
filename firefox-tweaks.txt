@@ -111,6 +111,10 @@ browser.urlbar.trimURLs - false
 Revert to old search bar layout:
 browser.search.showOneOffButtons - false
 
+Remove "(site) is now fullscreen" nag message and make it faster:
+full-screen-api.approval-required - false
+browser.fullscreen.animate - false
+
 De-crap new tab page:
 browser.newtabpage.directory.ping - (blank)
 browser.newtabpage.directory.source - (blank)
