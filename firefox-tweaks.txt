@@ -121,18 +121,18 @@ browser.newtabpage.directory.source - (blank)
 browser.newtabpage.enabled - false
 browser.newtabpage.enhanced - false
 
+Disable tab animation:
+http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
+browser.tabs.animate – false
+
+Speed up security delay when installing add-ons:
+security.dialog_enable_delay - 400
+
 Enable eyedropper in dev tools:
 devtools.command-button-eyedropper.enabled - true
 
 Dark theme for dev tools:
 devtools.theme - dark
-
-Speed up security delay when installing add-ons:
-security.dialog_enable_delay - 400
-
-Disable tab animation:
-http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
-browser.tabs.animate – false
 
 ----------------------------------------------------
 
